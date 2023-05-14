@@ -34,15 +34,19 @@
 
 /* In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created */
 function Person(firstName, lastName) {
+    
     this.firstName = firstName;
     this.lastName = lastName;
     
     this.greet = function(calledFrom) {
         console.log(`${this.firstName} ${this.lastName} ${calledFrom}`);
     };
+
+    // callback functions takes the global context
+    setTimeout(function() {
+        console.log(this);
+    }, 1000);
 }
 
 const person3 = new Person("Rajesh", "Gupta");
 person3.greet("@ person3.greet()");
-
-
