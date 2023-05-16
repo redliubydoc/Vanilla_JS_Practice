@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Debounce </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./countries.js"></script>
+  </head>
+
+  <body>
+    <div class="container-table">
+      <table>
+        <tbody>
+          <tr>
+            <td><div> No. of keyups </div></td>
+            <td> <div id="n-keyups"> 0 </div></td>
+          </tr>
+          <tr>
+            <td><div> No. of debounce payload calls </div></td>
+            <td> <div id="n-debounce"> 0 </div></td>
+          </tr>
+          <tr>
+            <td><div> Search string captured </div></td>
+            <td><textarea cols="100" id="str-debounce" readonly> </textarea cols="100"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container-country">
+      <input id="input-country" type="text" placeholder="Country . . ." readonly>
+      <ul id="dropdown-country" hidden></ul>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

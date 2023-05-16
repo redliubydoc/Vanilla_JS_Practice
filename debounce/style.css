@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+body {
+    background-color: #212121;
+}
+
+.container-table {
+    display: flex;
+    justify-content: center;
+}
+
+.container-country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    padding: 10px;
+    background-color: whitesmoke;
+    margin: 50px;
+}
+
+table td {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+table td div, textarea {
+    min-height: 30px;
+    padding: 5px;
+}
+
+table td:nth-child(1) div {
+    text-align: center;
+    width: 250px;
+}
+
+table td textarea {
+    vertical-align: top;
+}
+
+#dropdown-country, 
+#input-country {
+    width: 400px;
+    padding: 10px;
+}
+
+#dropdown-country {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+}
+
+#dropdown-country li {
+    height: 30px;
+    padding-top: 5px;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: start;
+}
+
+#dropdown-country li:hover {
+    background-color: cornflowerblue;
+}
