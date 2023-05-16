@@ -9,10 +9,10 @@ function debounce(fn, delay) {
         timeout = setTimeout(function() {
             fn.call(context, ...args);
         }, delay);
-    }
+    };
 }
 
-const delay = 500;
+const delay = 1000;
 
 const performanceData = {
     keyupCount: 0,
