@@ -3,7 +3,7 @@ function debounce(fn, delay) {
 
     // this is the callback that will be passed as event handler
     return function(...args) {
-        let context = this;
+        const context = this;
 
         clearTimeout(timeout);
         timeout = setTimeout(function() {
