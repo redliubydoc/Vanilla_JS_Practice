@@ -1,0 +1,172 @@
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-x {
+  
+  background-color: wheat !important;
+}
+
+.bg-o {
+
+  background-color: lightblue !important;
+}
+
+.tx-x {
+
+  color: black !important;
+}
+
+.tx-o {
+
+  color: black !important;
+}
+
+*:disabled {
+
+  cursor: not-allowed !important;
+}
+
+.container-main {
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.container-score-board {
+
+  display: flex;
+  align-items: stretch;
+
+  width: 300px;
+  height: 50px;
+
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .45);
+}
+
+.container-score-x,
+.container-score-o {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+
+  font-size: 28px;
+  color: black;
+}
+
+.container-score-x {
+
+  background-color: wheat;
+  border-bottom: 5px solid red;
+}
+
+.container-score-o {
+
+  background-color: lightblue;
+  border-bottom: 5px solid blue;
+}
+
+.board {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 300px;
+  height: 300px;
+
+  outline: 1px solid black;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .45);
+}
+
+.cell {
+
+  flex-basis: 33.33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 64px;
+
+  height: 100px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+.container-controls {
+
+  margin-top: 20px;
+  width: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#btn-xo,
+#btn-reset,
+#slt-hardness {
+
+  width: 98px;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .45);
+}
+
+#btn-toggle-mode {
+
+  width: 300px;
+  height: 30px;
+  border: none;
+  margin-top: 8px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .45);
+  cursor: pointer;
+}
+
+.overlay {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+  font-size: 64px;
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.overlay.hide {
+
+  display: none;
+}

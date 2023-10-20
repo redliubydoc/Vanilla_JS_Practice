@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts/GameConstants.js"></script>
+    <script src="scripts/Game.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="overlay hide">
+    </div>
+    <div class="container-main">
+      <div class="container-score-board">
+        <div class="container-score-x"> </div>
+        <div class="container-score-o"> </div>
+      </div>
+      <div class="container-board">
+        <div class="board">
+          <div class="cell" data-cell-index="0"></div>
+          <div class="cell" data-cell-index="1"></div>
+          <div class="cell" data-cell-index="2"></div>
+          <div class="cell" data-cell-index="3"></div>
+          <div class="cell" data-cell-index="4"></div>
+          <div class="cell" data-cell-index="5"></div>
+          <div class="cell" data-cell-index="6"></div>
+          <div class="cell" data-cell-index="7"></div>
+          <div class="cell" data-cell-index="8"></div>
+        </div>
+      </div>
+      <div class="container-controls">
+        <select id="slt-hardness" class="bg-o">
+          <option value="EASY"><span>Easy</span></option>
+          <option value="HARD" selected><span>Hard</span></option>
+        </select>
+        <button id="btn-xo" class="bg-o">Play as X</button>
+        <button id="btn-reset" class="bg-o">Reset</button>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
